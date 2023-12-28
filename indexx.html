@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de connexion</title>
+    <!-- Include Firebase SDKs for authentication -->
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth-compat.js"></script>
+
+    <!-- Include external CSS styles -->
+    <link rel="stylesheet" href="./F1-1.css">
+</head>
+<body>
+   <section>
+       <h1> Connexion</h1>
+       
+       <!-- User Login Form -->
+       <form action="" method="POST">
+           <label for="email">Adresse Mail</label>
+           <!-- Input field for email -->
+           <input type="text" name="email" id="email">
+           <label for="password">Mot de Passe</label>
+           <!-- Input field for password -->
+           <input type="password" name="password" id="password">
+       </form>
+       <!-- Button to initiate login -->
+       <button id="submit-btn" onclick="signIn()">Valider</button>
+
+   </section>
+
+   <!-- Include JavaScript file for Firebase authentication -->
+   <script src="bienvenu.js"></script>
+</body>
+</html>
